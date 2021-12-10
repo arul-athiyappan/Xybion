@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xybion Digital Acceleration Platform :: Machine Test :: ARUL A</title>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-2 leftsdbar">
+      <div class="logo"><img src="images/logo.jpg" alt=""></div>
+      <div class="row" id="body-row"> 
+        <!-- Sidebar -->
+        <div id="sidebar-container" class="sidebar-expanded d-none d-md-block"> 
+          <!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' --> 
+          <!-- Bootstrap List Group -->
+          <ul class="list-group">
+            <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-start align-items-center"> <span class="fa fa-user-circle-o fa-fw mr-3"></span> <span class="menu-collapsed">User Console</span> <span class="submenu-icon ml-auto"></span> </div>
+            </a> 
+            <!-- Submenu content -->
+            <div id='submenu1' class="collapse sidebar-submenu">
+				<a href="#" class="list-group-item list-group-item-action bg-dark text-white"> <span class="menu-collapsed">My Dashboard</span> </a>
+				<a href="#" class="list-group-item list-group-item-action bg-dark text-white"> <span class="menu-collapsed">Query</span> </a> <a href="#" class="list-group-item list-group-item-action bg-dark text-white"> <span class="menu-collapsed">DMS</span> </a>
+				<a href="#" class="list-group-item list-group-item-action bg-dark text-white"> <span class="menu-collapsed">Audit Trail</span> </a>
+			  </div>
+            <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-start align-items-center">
+				<span class="fa fa-male fa-fw mr-3"></span>
+				<span class="menu-collapsed">Administration</span> <span class="submenu-icon ml-auto"></span>
+			</div>
+            </a> 
+            <!-- Submenu content -->
+            <div id='submenu2' class="collapse sidebar-submenu">
+				<a href="#" class="list-group-item list-group-item-action bg-dark text-white"> <span class="menu-collapsed">My Dashboard</span> </a>
+				<a href="#" class="list-group-item list-group-item-action bg-dark text-white"> <span class="menu-collapsed">Query</span> </a>
+				<a href="#" class="list-group-item list-group-item-action bg-dark text-white"> <span class="menu-collapsed">DMS</span> </a>
+				<a href="#" class="list-group-item list-group-item-action bg-dark text-white"> <span class="menu-collapsed">Audit Trail</span> </a> </div>
+          </ul>
+          <!-- List Group END--> 
+        </div>
+        <!-- sidebar-container END --> 
+      </div>
+      <!-- body-row END --> 
+    </div>
+    <div class="col-sm-10 contntprt">
+      <div class="profile_prt">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <nav class="navbar navbar-expand-sm">
+                <div class="collapse navbar-collapse" id="navbar-list-4">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/pro-icon.jpg" width="40" height="40" class="rounded-circle">John Smith</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> <a class="dropdown-item" href="#">Dashboard</a>
+						  <a class="dropdown-item" href="#">Edit Profile</a> <a class="dropdown-item" href="#">Log Out</a> </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 cntbgclr">
+            <div class="col-sm-12">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Study Setup</a></li>
+                <li class="breadcrumb-item"><a href="#">Details</a></li>
+                <li class="breadcrumb-item active" aria-current="page">General Details</li>
+              </ol>
+            </div>
+            <div class="col-sm-12">
+              <fieldset>
+                <legend>Client Details</legend>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Client</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Client Study ID Number</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Budget</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>PO Number</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Contract Name</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>WBS Element Number</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Code</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="form-group">
+                      <label>Notes</label>
+                      <textarea class="form-control"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Sample Details</legend>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>#Slides to Cut</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Expected Batch Size</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Expected Number of Cases</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Expected Batch Frequency</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Peer Review Case Threshold</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Disposition Date of Specimens</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Schedule of Material Transfer</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="form-group">
+                      <label>Imaging Required</label>
+                      <select class="form-control">
+                        <option selected>Yes</option>
+                        <option>No</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-5">
+                    <div class="form-group">
+                      <label>Imaging Required</label>
+                      <div class="ckboxlst">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="customCheck1">
+                          <label class="custom-control-label" for="customCheck1">Wet Tissue</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="customCheck2">
+                          <label class="custom-control-label" for="customCheck2">Block</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="customCheck3">
+                          <label class="custom-control-label" for="customCheck3">Slide</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Study Details</legend>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <label>Study Title</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Study Designation</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Type</label>
+                      <select class="form-control">
+                        <option selected>CAP/CLIA</option>
+                        <option>CAP/CLIA</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Version</label>
+                      <input type="text" class="form-control" placeholder="0.1">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Status</label>
+                      <select class="form-control">
+                        <option selected>Draft</option>
+                        <option>Publish</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Start Date</label>
+                      <input type="date" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>End Date</label>
+                      <input type="date" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Turn Around Time</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Study Author</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Project Manager</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Lead Pathologist</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Lead Scientist</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Number of Clinical Sites</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <label>Description</label>
+                      <textarea class="form-control"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Study Created By</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Study Created On</label>
+                      <input type="date" class="form-control">
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="col-sm-12">
+                <center>
+                  <button type="button" class="btn btn-success">Save</button>
+                </center>
+              </div>
+              <hr>
+            </div>
+            <div class="ftrprt">
+              <p>2021 All Right Reserved. Xybion Digital</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/custom-js.js"></script>
+</body>
+</html>
